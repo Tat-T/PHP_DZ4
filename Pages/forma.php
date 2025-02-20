@@ -10,7 +10,7 @@
 
 <body class="bg-warning-subtle">
     <div class="container mt-5 ">
-        <form method="POST" action="register.php" class="container bg-light-subtle col-6 rounded p-3 mt-3 position-absolute top-50 start-50 translate-middle shadow-lg">
+        <form method="POST" action="User.php" class="container bg-light-subtle col-6 rounded p-3 mt-3 position-absolute top-50 start-50 translate-middle shadow-lg">
             <div class="row mb-3">
                 <h2 class="text-warning">Форма регистрации</h2>
             </div>

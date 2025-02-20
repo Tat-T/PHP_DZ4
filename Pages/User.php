@@ -1,12 +1,14 @@
 <?php
+require_once "../Database.php";
+
 class User {
     public $login;
-    public $pass;
+    public $password;
     public $email;
 
-    public function __construct($login, $pass, $email) {
+    public function __construct($login, $password, $email) {
         $this->login = htmlspecialchars($login);
-        $this->pass = htmlspecialchars($pass);
+        $this->password = htmlspecialchars($password);
         $this->email = htmlspecialchars($email);
     }
 
@@ -19,25 +21,13 @@ class User {
     }
 }
 
-class Database {
-    private $connection;
-
-    public function connect($host, $user, $pass, $dbname) {
-        $this->connection = new mysqli($host, $user, $pass, $dbname);
-        if ($this->connection->connect_error) {
-            die("Ошибка подключения: " . $this->connection->connect_error);
-        }
-        return $this->connection;
-    }
-}
-
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $login = $_POST['login'] ?? '';
-    $pass = $_POST['password'] ?? '';
+    $password = $_POST['password'] ?? '';
     $email = $_POST['email'] ?? '';
     
-    if (!empty($login) && !empty($pass) && !empty($email)) {
-        $user = new User($login, $pass, $email);
+    if (!empty($login) && !empty($password) && !empty($email)) {
+        $user = new User($login, $password, $email);
         $user->show();
     } else {
         echo "<div class='container mt-5 p-3 border border-danger rounded text-danger'>";
