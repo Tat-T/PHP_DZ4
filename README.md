@@ -5,3 +5,6 @@
 ## Запуск и установка
 
 http://localhost/php_dz4/Pages/forma.php
+
+<img src="image/Screenshot_4.png" alt="скрин" width="350">
+<img src="image/Screenshot_5.png" alt="скрин" width="350">
