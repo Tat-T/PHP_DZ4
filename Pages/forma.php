@@ -15,15 +15,15 @@
                 <h2 class="text-warning">Форма регистрации</h2>
             </div>
             <div class="form-floating mb-3">
-                <input type="Login" class="form-control border border-warning focus-ring focus-ring-warning" id="floatingLogin" placeholder="Password">
+                <input type="Login" name="login" class="form-control border border-warning focus-ring focus-ring-warning" id="floatingLogin" placeholder="Password">
                 <label for="floatingLogin">Login</label>
             </div>
             <div class="form-floating mb-3">
-                <input type="Password" class="form-control border border-warning focus-ring focus-ring-warning" id="floatingPassword" placeholder="Password">
+                <input type="Password" name="password" class="form-control border border-warning focus-ring focus-ring-warning" id="floatingPassword" placeholder="Password">
                 <label for="floatingPassword">Password</label>
             </div>
             <div class="form-floating">
-                <input type="email" class="form-control border border-warning focus-ring focus-ring-warning" id="floatingInput" placeholder="name@example.com">
+                <input type="Email" name="email" class="form-control border border-warning focus-ring focus-ring-warning" id="floatingInput" placeholder="name@example.com">
                 <label for="floatingInput">Email address</label>
             </div>
             <div class="d-grid mt-3 bg-warning-subtle rounded-3">
